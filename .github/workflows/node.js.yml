@@ -24,4 +24,5 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm i
-    - run: npm run dev
+    - run: npm install webpack webpack-cli --save-dev
+    - run: npx webpack
